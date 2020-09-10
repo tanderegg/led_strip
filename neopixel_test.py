@@ -1,0 +1,23 @@
+import board
+import neopixel
+
+pixels = neopixel.NeoPixel(board.D18, 18, auto_write=False, pixel_order=neopixel.GRB)
+pixels[0] = (10, 0, 0)
+pixels[1] = (0, 10, 0)
+pixels[2] = (0, 0, 10)
+pixels[3] = (10, 10, 0)
+pixels[4] = (0, 10, 10)
+pixels[5] = (10, 0, 10)
+pixels[6] = (10, 10, 10)
+pixels[7] = (20, 0, 0)
+pixels[8] = (0, 20, 0)
+pixels[9] = (0, 0, 20)
+pixels[10] = (20, 20, 0)
+pixels[11] = (0, 20, 20)
+pixels[12] = (20, 0, 20)
+pixels[13] = (20, 20, 20)
+pixels[14] = (30, 0, 0)
+pixels[15] = (0, 30, 0)
+pixels[16] = (0, 0, 30)
+pixels[17] = (30, 30, 0)
+pixels.show()
